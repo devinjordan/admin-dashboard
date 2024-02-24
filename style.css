@@ -44,9 +44,37 @@ body {
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  margin: 5px 5px 5px 0;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-bar {
+  background-color: rgb(203, 239, 203);
+  height: 28px;
+  width: max(300px, 30vw);
+  border-radius: 14px;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 ion-icon {
+  font-size: 24px;
+}
+
+.item-container ion-icon {
   font-size: 32px;
 }
 
