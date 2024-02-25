@@ -53,9 +53,23 @@ body {
 }
 
 .top-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.top-header-left {
+  grid-column: 1 / 3;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.top-header-right {
+  grid-column: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-bar {
